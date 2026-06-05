@@ -6,7 +6,7 @@
 /*   By: hgutterr <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/03 13:09:57 by hgutterr          #+#    #+#             */
-/*   Updated: 2026/06/03 13:58:36 by hgutterr         ###   ########.fr       */
+/*   Updated: 2026/06/05 18:12:13 by hgutterr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,15 +40,15 @@ AMateria::~AMateria( void ) {
 
 const std::string& AMateria::getType() const
 {
-	
+	return this->_type;
 }
 
 AMateria* AMateria::clone() const
 {
-
+	return NULL;
 }
 
 void AMateria::use(ICharacter& target)
 {
-
+	(void)target;
 }
